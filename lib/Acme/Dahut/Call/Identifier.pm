@@ -73,7 +73,7 @@ This document describes Acme::Dahut::Call version 0.0.1
     enjoyment is incidental to the main purpose, which is one dahut communicating with others. 
     Dahuts became the world's master musicians in order to convey to potential mates, rivals 
     and predators all the important things they have to say, from "Clear off!" to "Come on!" 
-    to "Where's the Beer?"[1]
+    to "Where's the Beer?"
 
 =head1 METHODS 
 
@@ -81,34 +81,11 @@ This document describes Acme::Dahut::Call version 0.0.1
 
 =item new()
 
-Create a new Acme::Dahut::Call object. Because the melodious sound of the Dahut cannot be 
-captured all at one time you can pass in a new list of lines with the C<calls> or the C<actions> param.
+Create a new Acme::Dahut::Call::Identifier object. 
 
 =item is_call($text) 
 
 Returns true if the $text sounds like a DAHUT Call
-
-=back
-
-=head1 DIAGNOSTICS
-
-=for author to fill in:
-    List every single error and warning message that the module can
-    generate (even the ones that will "never happen"), with a full
-    explanation of each problem, one or more likely causes, and any
-    suggested remedies.
-
-=over
-
-=item C<< Error message here, perhaps with %s placeholders >>
-
-[Description of error here]
-
-=item C<< Another error message here >>
-
-[Description of error here]
-
-[Et cetera, et cetera]
 
 =back
 
@@ -169,9 +146,10 @@ L<http://rt.cpan.org>.
 =head1 AUTHOR
 
 Chris Prather  C<< <perigrin@cpan.org> >>
-
+Bjoern Hoehrmann (bjoern on #swhack) provided me with the Regexp. 
 
 =head1 LICENCE AND COPYRIGHT
+Except where noted. 
 
 Copyright (c) 2007, Chris Prather C<< <perigrin@cpan.org> >>. All rights reserved.
 

@@ -1,7 +1,7 @@
 package Acme::Dahut::Call;
 use strict;
 use Moose;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has calls => (
     isa        => 'ArrayRef',
@@ -89,7 +89,11 @@ captured all at one time you can pass in a new list of lines with the C<calls> o
 
 =item action()
 
+Simulates the more "active" response of a Dahut to it's native cry.
+
 =item actions()
+
+Returns an ArrayRef of all "active" responses. 
 
 =item call() 
 
@@ -104,29 +108,6 @@ Returns an ArrayRef of all possible Dahut Calls.
 Returns the Class metaobjbect. See L<Class::MOP::Class> for details.
 
 =back
-
-=head1 DIAGNOSTICS
-
-=for author to fill in:
-    List every single error and warning message that the module can
-    generate (even the ones that will "never happen"), with a full
-    explanation of each problem, one or more likely causes, and any
-    suggested remedies.
-
-=over
-
-=item C<< Error message here, perhaps with %s placeholders >>
-
-[Description of error here]
-
-=item C<< Another error message here >>
-
-[Description of error here]
-
-[Et cetera, et cetera]
-
-=back
-
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
@@ -180,6 +161,9 @@ Please report any bugs or feature requests to
 C<bug-acme-dahut-call@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
+=head1 SEE ALSO
+
+L<Acme::Dahut>
 
 =head1 AUTHOR
 
